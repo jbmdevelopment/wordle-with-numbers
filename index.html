@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <center>
+  <div id = "difficulty">
+    <fieldset>
+     <h1>Select your difficulty (ignore this) this might be added in the future</h1>
+     <label for="difficulty">Select</label>
+     <select id="diff">
+       <option value="normal">Normal</option>
+       <option value="medium">Medium</option>
+       <option value="hard">Hard</option>
+     </select>
+    <button id = "startGame">Start Game</button>
+      <p>
+        Welcome to "Wordle", you have to a guess a number. with a certain amount of tries.
+        Do not put in zero for a guess as numbers are randomly generated from 1 - 9 for each slot, and duplicates cannot exist.
+      </p>
+      </fieldset>
+  </div>
+    </center>
+  <div id = "mainGame">
+    <center>
+      <h1 id = "triesText">Tries: 10</h1>
+      <h2 id = "revealedAnswer">XXXX</h2>
+      <button id = "guessButton">Enter Guess</button>
+      <input type="text" id="slot1" name="name" required minlength="1" maxlength="1" size="5"/>
+       <input type="text" id="slot2" name="name" required minlength="1" maxlength="1" size="5"/>
+       <input type="text" id="slot3" name="name" required minlength="1" maxlength="1" size="5"/>
+       <input type="text" id="slot4" name="name" required minlength="1" maxlength="1" size="5"/>
+    </center>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
